@@ -2,8 +2,6 @@ package tree;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
-import java.util.TreeSet;
 
 /**
  * @ Author: Xuelong Liao
@@ -11,7 +9,7 @@ import java.util.TreeSet;
  * @ Date: created in 21:55 2018/3/8
  * @ ModifiedBy:
  */
-public class LongestSubstringWithoutDup {
+public class LongestSubstringWithoutDup48 {
     public static int longestSubstringWithoutDuplicationMap(String s) {
         Map<Character, Integer> map = new HashMap<>();
         int longestCur = 0, longestAll = 0;
@@ -62,6 +60,6 @@ public class LongestSubstringWithoutDup {
 
     public static void main(String[] args) {
         String s = "arabcacfrdef";
-        System.out.println(LongestSubstringWithoutDup.longestSubstringWithoutDuplication(s));
+        System.out.println(LongestSubstringWithoutDup48.longestSubstringWithoutDuplication(s));
     }
 }

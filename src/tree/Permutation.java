@@ -6,10 +6,10 @@ import java.util.Collections;
 /**
  * @ Author: Xuelong Liao
  * @ Description:
- * @ Date: created in 11:25 2018/3/8
+ * @ Date: created in 17:41 2018/9/5
  * @ ModifiedBy:
  */
-public class StringPermutation {
+public class Permutation {
     public ArrayList<String> Permutation(String s) {
         int n = s.length();
         char[] ch = s.toCharArray();

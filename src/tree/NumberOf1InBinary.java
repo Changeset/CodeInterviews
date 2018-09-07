@@ -15,4 +15,9 @@ public class NumberOf1InBinary {
         }
         return count;
     }
+
+    public static void main(String[] args) {
+        NumberOf1InBinary n = new NumberOf1InBinary();
+        System.out.println(n.NumberOf1(-1));
+    }
 }

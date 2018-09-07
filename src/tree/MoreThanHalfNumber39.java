@@ -55,7 +55,8 @@ public class MoreThanHalfNumber39 {
         return isMoreThanHalf;
     }
     public int partition(int[] a, int lo, int hi) {
-        if (a == null || lo >= hi) throw new IllegalArgumentException();
+        if (a == null || lo > hi) throw new IllegalArgumentException();
+        if (lo == hi) return lo;
         int i = lo;
         int j = hi + 1;
         int value = a[lo];
@@ -92,5 +93,11 @@ public class MoreThanHalfNumber39 {
         int temp = a[lo];
         a[lo] = a[hi];
         a[hi] = temp;
+    }
+
+    public static void  main(String[] args) {
+        int[] a = {1};
+        MoreThanHalfNumber39 m = new MoreThanHalfNumber39();
+        System.out.println(m.moreThanHalfNumber(a));
     }
 }
